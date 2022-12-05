@@ -187,6 +187,7 @@ a{
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
 	padding-top: 0.5em;
+	padding-bottom: 152px;
 }
 
 .cella {
@@ -302,7 +303,6 @@ h2:hover{
     top: calc(50vh - 92px + 18px);
     right: 0;
     cursor: pointer;
-    bottom: 148px;
 }
 #bottone_indietro{
 	position: fixed;
@@ -310,7 +310,7 @@ h2:hover{
 	top: calc(50vh - 92px + 18px);
 	left: 2px;
 	cursor: pointer;
-	bottom: 148px;
+
 }
 
 }
