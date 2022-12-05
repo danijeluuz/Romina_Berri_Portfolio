@@ -110,21 +110,26 @@ h2{
 }
 
 h2:hover{
-	color: gray;
+	color: rgb(170,170,170);
 	cursor: pointer;
 	transition: color 200ms ease-out 10ms;		
 }
 
 a:hover{
-	color: gray;
+	color: rgb(170,170,170);
 	cursor: pointer;
 	transition: color 200ms ease-out 10ms;		
 }
 
 .close:hover{
-	color: gray;
+	color: rgb(170,170,170);
 	cursor: pointer;
 	transition: color 200ms ease-out 10ms;		
+}
+
+pre:hover {
+	color: rgb(170,170,170);
+	transition: color 200ms ease-out 10ms;	
 }
 
 hr {
@@ -345,7 +350,7 @@ pre{
 #bottone_avanti{
 	position: fixed;
     margin: auto;
-    left: calc(100vw - 38px);
+    left: calc(100vw - 28px);
     top: calc(50vh - 71px);
     right: 0;
     cursor: pointer;

@@ -13,7 +13,7 @@
 
 <div class="flexContainer">
 	<a href="index.html">
-	<div class="titolo"style="color: grey;">
+	<div class="titolo"style="color:black">
 	<h1 id="input" class="invisibile">Romina Berri</h1>
 	<pre id="output"></pre>
 	<hr>
@@ -30,11 +30,11 @@
 <p id="demo"></p> 
 
 <div id="bottone_avanti" onclick="avanti()">
-	<img src="Icons/arrow_forward_black_36dp.svg">
+	<img src="Icons/arrow_forward_black_24dp.svg">
 </div>
 
 <div id="bottone_indietro" onclick="indietro()">
-	<img src="Icons/arrow_back_black_36dp.svg">
+	<img src="Icons/arrow_back_black_24dp.svg">
 </div>
 
 <div class="grigliahome" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="nextImage()">
@@ -118,6 +118,7 @@ function nextImage(){
         }
     }
   }
+
 	else if(x > 184){
   	 for(var i = imgArray.length-1; i >=0 ;i--){
         if(imgArray[i].src == img.src){
@@ -197,7 +198,7 @@ function aggiungiTesto() {
 	out.innerText += testo[indice]
 	indice = indice + 1
 	if (indice < testo.length) {
-		let pausa = Math.floor(Math.random() * 3) * 30 + 150
+		let pausa = Math.floor(Math.random() * 3) * 75 + 200
 		setTimeout(aggiungiTesto, pausa)
 	}
 }
