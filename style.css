@@ -1,10 +1,16 @@
 body {
 		margin: 0em 0.5em 0em 0.5em;
 	    overflow-x: hidden;
-		font-family: Manrope;
-		font-weight: 100;
+		font-family: manrope;
 		/*overflow-y: hidden;*/
 	}
+
+@font-face {
+    font-family: 'manrope';
+    src: url('Font/Manrope-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 .noselect {
@@ -23,8 +29,7 @@ pre {
 	margin: 0;
 	line-height: 1.4em;
 	background-color: none;
-	font-family: Manrope;
-
+	font-family: 'manrope';
 }
 .invisibile {
 	display: none;
@@ -68,20 +73,18 @@ pre {
 
 .close{
 	color: black;
-  	font-size: 1.5em;
+  	font-size: 1.4em;
 }
 
 p {
-	font-family: Manrope;
 	margin:0;
 	z-index: 1000;
 	color: black;
 	font-size: 1.1em;
-	line-height: 1.25em;
+	line-height: 1.2em;
 }
 
 h1 {
-	font-family: Manrope;
 	font-size: 1.4em;
 	line-height: 1.4em;
 	margin: 0;
@@ -89,7 +92,6 @@ h1 {
 }
 
 h2{
-	font-family: Manrope;
 	margin: 0em;
 	margin-right: 0px;
 	color: black;
@@ -143,8 +145,9 @@ a{
 }
 
 .infoQuadri{
-	font-family: Manrope;
-	font-size: 1em;
+	font-size: 0.9em;
+	padding-top: 0em;
+	line-height: 1.15em;
 }
 
 /*
@@ -181,9 +184,22 @@ a{
 	grid-column-gap: 0.5em;
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
-	padding-top: 0.5em;
 	padding-bottom: 152px;
+	padding-top: 0.25em;
 }
+
+.imgCella {
+    margin: auto;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+  	object-fit: cover;
+}
+
 
 .cella {
 	margin-bottom: 0.25em;
@@ -263,17 +279,16 @@ hr {
     right: 0;
     bottom: 116px;
     z-index: -100;
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 70%;
+    max-width: 70%;
 }
 
 h2{
-	font-family: Manrope;
 	font-size: 1.25em;
 	line-height: 1.4em;
 	color: black;
 	margin: 0em;
-	margin-right: calc(100vw - 125px);
+	margin-right: calc(100vw - 120px);
 	color: black;
 	width: 100%;
 	margin-left: -0.5em;
@@ -306,9 +321,10 @@ pre{
 }
 
 .infoQuadri{
-	font-family: Manrope;
 	font-size: 0.75em;
+	padding-top: 0.25em;
 }
+
 
 .close{
 	color: black;
@@ -344,7 +360,7 @@ pre{
 	grid-column-gap: 0.5em;
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
-	padding-left: 184.46px;
+	padding-left: 178px;
 
 }
 
@@ -354,7 +370,7 @@ pre{
 	grid-column-gap: 0.5em;
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
-	padding-left: 184.46px;
+	padding-left: calc(178px + 0.5em);
 	padding-top: 0.5em;
 }
 
@@ -373,8 +389,16 @@ pre{
 	 grid-column: span 4;
 }
 
+.cinque {
+	 grid-column: span 5;
+}
+
 .sei{
 	grid-column: span 6;
+}
+
+.sette{
+	grid-column: span 7;
 }
 
 .otto{
@@ -444,15 +468,14 @@ hr{
     right: 0;
     bottom: 0px;
     z-index: -100;
-    max-height: 70%;
-    max-width: 70%;
+    max-height: 75%;
+    max-width: 75%;
 }
 
 h2{
-	font-family: Manrope;
 	font-size: 1.4em;
 	margin: 0em;
-	margin-right: calc(50px - 0.5em);
+	margin-right: calc(50px);
 	color: black;
 	width: 100%;
 }
