@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Romina Berri</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Manrope'>
+	<script src="main.js"></script>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Manrope');
+
+	</style>
+</head>
+
+<body class="noselect" style="overflow-y: hidden;">
+
+<div class="flexContainer">
+	<a href="index.html">
+	<div class="titolo"style="color: grey;">
+	<h1 id="input" class="invisibile">Romina Berri</h1>
+	<pre id="output"></pre>
+	<hr>
+	</div>
+	</a>
+
+	<div class="info">
+		<a href="info.html">
+			<h1>Info</h1><hr>
+		</a>
+	</div>	
+</div>
+
+<p id="demo"></p> 
+
+<div id="bottone_avanti" onclick="avanti()">
+	<img src="Icons/arrow_forward_black_36dp.svg">
+</div>
+
+<div id="bottone_indietro" onclick="indietro()">
+	<img src="Icons/arrow_back_black_36dp.svg">
+</div>
+
+<div class="grigliahome" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="nextImage()">
+	<div id="Outer" class="cella dodici img">
+
+		<img src="Thumbnail/image1.jpg" class="imageHome" id="mainImage">
+		
+
+		<!-- <img src="Thumbnail/07.jpg"> -->
+	</div>
+</div>
+
+
+<!-- 	<div class="flexContainer2">
+			<div>
+				<hr class="hrindice">
+				<h2>Quadri</h2><hr class="hrindice">
+				<h2 onclick="openMenu()" id="hidePic">Fotografie</h2>
+				<div id="hideContent" style="display: none">
+	
+					<h2 style="	text-align: right;">Matrimoni</h2><hr class="hrindice">
+					<h2 style="	text-align: right;">Architettura</h2><hr class="hrindice">
+					<h2 style="	text-align: right;">Still life</h2 class="hrindice">
+				</div>
+								
+			</div>
+		</div>-->
+
+			<div class="flexContainer2">
+			<div class="indice">
+				<hr class="hrindice">
+				<a href="quadri.html">
+					<h2>Quadri</h2><hr class="hrindice">
+				</a>
+
+                <a href="matrimoni.html">
+               		<h2>Matrimoni</h2><hr class="hrindice">
+                </a>
+
+                <a href="architettura.html">
+                	<h2>Architettura</h2><hr class="hrindice">
+                </a>
+
+                <a href="still_life.html">
+                	<h2>Still life</h2 class="hrindice">	
+                </a>		
+			</div>
+		</div>	
+
+<script>
+
+var imgArray = new Array();
+
+imgArray[0] = new Image();
+imgArray[0].src = 'Thumbnail/image1.jpg';
+
+imgArray[1] = new Image();
+imgArray[1].src = 'Thumbnail/image2.png';
+
+imgArray[2] = new Image();
+imgArray[2].src = 'Thumbnail/001_Astratto_Niki.png';
+
+
+function nextImage(){
+
+  var x = event.clientX;
+  var y = event.clientY;
+  var coor = "X coords: " + x + ", Y coords: " + y;
+  var img = document.getElementById("mainImage");
+
+
+  if(x > (window.innerWidth/2+88)){
+  	for(var i = 0; i < imgArray.length;i++){
+        if(imgArray[i].src == img.src){
+            if(i === imgArray.length){
+            document.getElementById("mainImage").src = imgArray[0].src;
+            break;
+            }
+            document.getElementById("mainImage").src = imgArray[i+1].src;
+            break;
+        }
+    }
+  }
+	else if(x > 184){
+  	 for(var i = imgArray.length-1; i >=0 ;i--){
+        if(imgArray[i].src == img.src){
+            if(i === imgArray.length){
+               document.getElementById("mainImage").src = imgArray[2].src;
+               break;
+            }
+            	document.getElementById("mainImage").src = imgArray[i-1].src;
+            	break;
+        }
+    }
+  }
+    
+}
+
+
+function avanti(){
+var img = document.getElementById("mainImage");
+
+  	for(var i = 0; i < imgArray.length;i++){
+        if(imgArray[i].src == img.src){
+            if(i === imgArray.length){
+            document.getElementById("mainImage").src = imgArray[0].src;
+            break;
+            }
+            document.getElementById("mainImage").src = imgArray[i+1].src;
+            break;
+        }
+    }
+  }
+
+function indietro(){
+var img = document.getElementById("mainImage");
+
+  for(var i = imgArray.length-1; i >=0 ;i--){
+    if(imgArray[i].src == img.src){
+        if(i === imgArray.length){
+           document.getElementById("mainImage").src = imgArray[3].src;
+           break;
+        }
+        	document.getElementById("mainImage").src = imgArray[i-1].src;
+        	break;
+   		}
+	}
+ }
+
+
+function showCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coor = "X coords: " + x + ", Y coords: " + y;
+
+  if(window.innerWidth > 700){
+	if(x > (window.innerWidth/2+88)){
+	  	document.getElementById("demo").innerHTML = "";
+	  	document.body.style.cursor = "url('Icons/arrow_forward_black_36dp.svg'), auto";
+	}
+
+	else if(x > 184){
+	 	document.body.style.cursor = "url('Icons/arrow_back_black_36dp.svg'), auto";
+	  }
+
+	else{
+	 	document.body.style.cursor = "default";
+	  }
+  }
+  	else{
+  		document.body.style.cursor = "default"
+  } 
+}
+
+let testo = document.querySelector('#input').innerText
+let out = document.querySelector('#output')
+let indice = 0
+
+function aggiungiTesto() {
+	out.innerText += testo[indice]
+	indice = indice + 1
+	if (indice < testo.length) {
+		let pausa = Math.floor(Math.random() * 3) * 30 + 150
+		setTimeout(aggiungiTesto, pausa)
+	}
+}
+aggiungiTesto()
+
+
+</script>
+
+</body>
+</html>
