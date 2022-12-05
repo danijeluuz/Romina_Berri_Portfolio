@@ -1,0 +1,450 @@
+body {
+		margin: 0em 0.5em 0em 0.5em;
+	    overflow-x: hidden;
+		font-family: Manrope;
+		font-weight: 600;
+		/*overflow-y: hidden;*/
+	}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(https://fonts.gstatic.com/s/manrope/v13/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bnTfc7AGrY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.noselect {
+  	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+pre {
+	font-size: 1.5em;
+	margin: 0;
+	line-height: 1.5em;
+	background-color: none;
+	font-family: Manrope;
+}
+.invisibile {
+	display: none;
+}
+
+.cella {
+	/*outline: 1px red solid;*/
+
+}
+
+#Outer {
+    height: calc(100vh -  34px);
+    position: relative;
+    z-index: -100;
+}
+
+.info{
+	text-align: right;
+	flex: 1 1 auto;
+	margin: 0;
+	text-align: right;
+	position: sticky;
+	top: 0.5em;
+	margin: 0em;
+	z-index: 0;
+	margin-right: -0.5em;
+	padding-right: 0.5em;
+	background-color: white;
+}
+
+.titolo{
+	flex: 1 1 auto;
+	margin-bottom: 0em;
+	position: sticky;
+	z-index: 1000;
+	margin-top:0em;
+	margin-left: -0.5em;
+	padding-left: 0.5em;
+	background-color: white;
+}
+
+.close{
+	color: black;
+  	font-size: 1.5em;
+}
+
+p {
+	font-family: Manrope;
+	font-size: 1em;
+	margin:0;
+	z-index: 1000;
+	color: black;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-family: Manrope;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 0;
+
+}
+
+h2{
+	font-family: Manrope;
+	margin: 0em;
+	margin-right: 0px;
+	color: black;
+	line-height: 1.5em;
+
+}
+
+h2:hover{
+	color: gray;
+	cursor: pointer;
+	transition: color 200ms ease-out 10ms;		
+}
+
+a:hover{
+	color: gray;
+	cursor: pointer;
+	transition: color 200ms ease-out 10ms;		
+}
+
+.close:hover{
+	color: gray;
+	cursor: pointer;
+	transition: color 200ms ease-out 10ms;		
+}
+
+hr {
+	text-decoration: none;
+	border: 0.5px solid black;
+	margin: 0em -0.5em 0em -0.5em;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.imgCella {
+    margin: auto;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -100;
+    width: 100%;
+     height: 100%;
+  object-fit: cover;
+  margin-bottom: 0.25em;
+}
+
+.infoQuadri{
+	font-family: Manrope;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+/*
+		@media (max-width:600px) {
+
+			.griglia {
+				max-width: initial;
+				display: block;
+			}
+			.cella {
+				margin-bottom: 1em;
+			}
+
+		}
+		*/
+
+@media only screen and (max-width: 700px) {
+
+
+.grigliahome {
+	max-width: width;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em;
+	margin-right: 0em;
+
+}
+
+.griglia {
+	max-width: width;
+	display: block;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em;
+	margin-right: 0em;
+	padding-top: 0.5em;
+}
+
+.cella {
+	margin-bottom: 0.25em;
+}
+
+.doppia {
+ 	grid-column: span 1;
+}
+
+.quadrupla {
+	 grid-column: span 2;
+}
+
+.sei{
+	grid-column: span 3;
+}
+
+.dodici {
+	grid-column: span 6;
+}
+
+		/*
+			.indice{
+				margin-left: -1em;
+				margin-bottom: -1.5em;
+				padding: 0em 100% 1em 1em;
+				position: fixed;
+				bottom: 1em; left: 1em;
+				background-color: greenyellow;
+			}*/
+	
+
+.flexContainer{
+ 		display: flex;
+  		flex: 1 1 auto;
+  		position: sticky;
+		top: 0em;
+		background-color: white;
+		padding-top: 0em;
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+.flexContainer2{
+ 		display: flex;
+  		flex: 1 1 auto;
+  		position: fixed;
+		bottom: 0em;
+		background-color: white;
+		padding-top: 0em;
+		padding-left: 0em;
+		padding-bottom: 0em;
+	}
+
+
+hr {
+	text-decoration: none;
+	border: 0.1px solid black;
+	border-style: solid;
+	margin: 0em -0.5em 0em -0.5em;
+	text-decoration: none;
+}
+
+.hrindice{
+	text-decoration: none;
+	border: 0.1px solid black;
+	border-style: solid;
+	margin: 0em -0.6em 0em -0.5em;
+	text-decoration: none;
+}
+
+.imageHome  {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    top: 36px;
+    right: 0;
+    bottom: 148px;
+    z-index: -100;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+h2{
+	font-family: Manrope;
+	font-size: 1.5em;
+	margin: 0em;
+	margin-right: calc(100vw - 140px);
+	color: black;
+	width: 100%;
+		margin-left: -0.5em;
+	padding-left: 0.5em;
+	background-color: white;
+}
+
+h1{
+	color: black;
+}
+
+h1:hover{
+	color: black;
+}
+
+h2:hover{
+	color: black;
+}
+
+#bottone_avanti{
+	position: fixed;
+    margin: auto;
+    left: calc(100vw - 38px);
+    top: calc(50vh - 92px + 18px);
+    right: 0;
+    cursor: pointer;
+    bottom: 148px;
+}
+#bottone_indietro{
+	position: fixed;
+    margin: auto;
+	top: calc(50vh - 92px + 18px);
+	left: 2px;
+	cursor: pointer;
+	bottom: 148px;
+}
+
+}
+
+@media only screen and (min-width: 701px) {
+
+.grigliahome {
+	max-width: width;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em;
+	margin-right: 0em;
+	padding-left: 184.46px;
+
+}
+
+.griglia {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em;
+	margin-right: 0em;
+	padding-left: 184.46px;
+	padding-top: 0.5em;
+}
+
+.cella {
+	/*margin-bottom: 1em;*/
+}
+
+.doppia {
+ 	grid-column: span 2;
+}
+
+.tripla {
+	 grid-column: span 3;
+}
+.quadrupla {
+	 grid-column: span 4;
+}
+
+.sei{
+	grid-column: span 6;
+}
+
+.otto{
+	grid-column: span 8;
+}
+
+.dodici {
+	grid-column: span 12;
+}
+
+.flexContainer{
+	display: flex;
+	flex: 1 1 auto;
+	position: sticky;
+	top: 0em;
+	background-color: white;
+	padding-top: 0em;
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+
+.flexContainer2{
+	display: flex;
+	flex: 1 1 auto;
+	position: fixed;
+	bottom: 0em;
+	background-color: white;
+	padding-top: 0em;
+	padding-left: 0em;
+	padding-right: 0px;
+	padding-bottom: 0em;
+	margin: 0;
+}
+
+
+.hrindice {
+	text-decoration: none;
+	border: 0.5px solid black;
+	margin: 0em 0em 0em -0.5em;
+	padding-right: 100px;
+	text-decoration: none;
+}
+
+.hrquadri {
+	text-decoration: none;
+	border: 0.5px solid black;
+	margin: 0em -0.5em 0em 0em;
+	padding-right: 100px;
+	text-decoration: none;
+}
+
+hr{
+	text-decoration: none;
+	border: 0.5px solid black;
+	margin: 0em -0.5em 0em -0.5em;
+	padding-right: 100px;
+	text-decoration: none;
+}
+
+
+.imageHome {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -100;
+    max-height: 70%;
+    max-width: 70%;
+}
+
+h2{
+	font-family: Manrope;
+	font-size: 1.5em;
+	margin: 0em;
+	margin-right: calc(50px - 0.5em);
+	color: black;
+	width: 100%;
+}
+
+#bottone_avanti{
+	display: none;
+}
+#bottone_indietro{
+	display: none;
+}
+
+}
+
+
+
