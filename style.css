@@ -62,6 +62,7 @@ pre {
 	margin-right: -0.5em;
 	padding-right: 0.5em;
 	background-color: white;
+
 }
 
 .titolo{
@@ -92,6 +93,8 @@ h1 {
 	font-size: 1.4em;
 	line-height: 1.4em;
 	margin: 0;
+	 font-family: 'manrope';
+    font-weight: 500;
 }
 
 .categoria{
@@ -106,6 +109,8 @@ h2{
 	color: black;
 	line-height: 1.4em;
 	font-size: 1.4em;
+		 font-family: 'manrope';
+    font-weight: 500;
 
 }
 
@@ -328,6 +333,7 @@ h2:hover{
 p{
 	font-size: 1.25em;
 	line-height: 1.3em;
+
 }
 
 pre{
