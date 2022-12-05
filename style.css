@@ -80,11 +80,11 @@ pre {
   	font-size: 1.4em;
 }
 
-p {
+p{
 	margin:0;
 	z-index: 1000;
 	color: black;
-	font-size: 1.1em;
+	font-size: 1.4em;
 	line-height: 1.2em;
 }
 
@@ -138,6 +138,7 @@ a{
 	color: black;
 	margin: 0;
 	padding: 0;
+
 }
 
 .imgCella {
@@ -194,7 +195,7 @@ a{
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
 	padding-bottom: 152px;
-	padding-top: 0.5em;
+
 }
 
 .imgCella {
@@ -320,8 +321,8 @@ h2:hover{
 }
 
 p{
-	font-size: 1.1em;
-	line-height: 1.2em;
+	font-size: 1.25em;
+	line-height: 1.3em;
 }
 
 pre{
@@ -362,8 +363,7 @@ pre{
 .categoria{
 	font-size: 1.25em;
 	line-height: 1.3em;
-	margin-top: -0.25em;
-
+	margin-top: 0.25em;
 }
 
 }
