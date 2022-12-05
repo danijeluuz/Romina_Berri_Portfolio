@@ -307,7 +307,7 @@ h2:hover{
 #bottone_indietro{
 	position: fixed;
     margin: auto;
-	top: calc(50vh - 92px + 18px);
+	top: calc(50vh - 92px);
 	left: 2px;
 	cursor: pointer;
 
