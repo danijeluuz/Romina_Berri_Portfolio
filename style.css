@@ -88,7 +88,12 @@ h1 {
 	font-size: 1.4em;
 	line-height: 1.4em;
 	margin: 0;
+}
 
+.categoria{
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin: 0;
 }
 
 h2{
@@ -341,12 +346,19 @@ pre{
     cursor: pointer;
     right: 0;
 }
+
 #bottone_indietro{
 	position: fixed;
     margin: auto;
 	top: calc(50vh - 71px);
 	left: 2px;
 	cursor: pointer;
+}
+
+.categoria{
+	font-size: 1.25em;
+	line-height: 1.3em;
+	margin: 0;
 }
 
 }
@@ -468,8 +480,8 @@ hr{
     right: 0;
     bottom: 0px;
     z-index: -100;
-    max-height: 75%;
-    max-width: 75%;
+    max-height: 80%;
+    max-width: 80%;
 }
 
 h2{
