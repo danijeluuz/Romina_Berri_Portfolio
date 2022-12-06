@@ -305,8 +305,8 @@ hr {
 }
 
 h2{
-	font-size: 1.25em;
-	line-height: 1.35em;
+	font-size: 1.3em;
+	line-height: 1.4em;
 	color: black;
 	margin: 0em;
 	margin-right: calc(100vw - 120px);
@@ -318,8 +318,8 @@ h2{
 }
 
 h1{
-	font-size: 1.25em;
-	line-height: 1.35em;
+	font-size: 1.3em;
+	line-height: 1.4em;
 	color: black;
 }
 
@@ -332,14 +332,14 @@ h2:hover{
 }
 
 p{
-	font-size: 1.25em;
-	line-height: 1.3em;
+	font-size: 1.3em;
+	line-height: 1.15em;
 
 }
 
 pre{
-	font-size: 1.25em;
-	line-height: 1.35em;
+	font-size: 1.3em;
+	line-height: 1.4em;
 }
 
 .infoQuadri{
@@ -350,8 +350,8 @@ pre{
 
 .close{
 	color: black;
-  	font-size: 1.25em;
-  	line-height: 1.3em;
+	font-size: 1.3em;
+	line-height: 1.4em;
 }
 
 #bottone_avanti{
@@ -372,9 +372,8 @@ pre{
 }
 
 .categoria{
-	font-size: 1.25em;
-	line-height: 1.2em;
-
+	font-size: 1.3em;
+	line-height: 1.15em;
 }
 
 }
