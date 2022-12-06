@@ -100,7 +100,7 @@ h1 {
 .categoria{
 	font-size: 1.4em;
 	line-height: 1.2em;
-	margin: 0;
+	margin-bottom: -0.1em;
 }
 
 h2{
@@ -361,7 +361,6 @@ pre{
     top: calc(50vh - 71px);
     right: 0;
     cursor: pointer;
-    right: 0;
 }
 
 #bottone_indietro{
@@ -374,8 +373,8 @@ pre{
 
 .categoria{
 	font-size: 1.25em;
-	line-height: 1.3em;
-	margin-top: 0.25em;
+	line-height: 1.2em;
+
 }
 
 }

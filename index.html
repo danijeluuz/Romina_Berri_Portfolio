@@ -29,11 +29,11 @@
 
 <p id="demo"></p> 
 
-<div id="bottone_avanti" onclick="avanti()">
+<div id="bottone_avanti" onclick="avanti()" style="margin: -30px; padding: 30px;">
 	<img src="Icons/arrow_forward_black_24dp.svg">
 </div>
 
-<div id="bottone_indietro" onclick="indietro()">
+<div id="bottone_indietro" onclick="indietro()" style="margin: -30px; padding: 30px;">
 	<img src="Icons/arrow_back_black_24dp.svg">
 </div>
 
@@ -198,7 +198,7 @@ function aggiungiTesto() {
 	out.innerText += testo[indice]
 	indice = indice + 1
 	if (indice < testo.length) {
-		let pausa = Math.floor(Math.random() * 3) * 75 + 200
+		let pausa = Math.floor(Math.random() * 3) * 75 + 170
 		setTimeout(aggiungiTesto, pausa)
 	}
 }
