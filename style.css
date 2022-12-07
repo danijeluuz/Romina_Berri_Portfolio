@@ -101,6 +101,7 @@ h1 {
 	font-size: 1.4em;
 	line-height: 1.2em;
 	margin-bottom: 0em;
+	margin-top: -0.20em;
 }
 
 h2{
@@ -377,6 +378,7 @@ pre{
 .categoria{
 	font-size: 1.3em;
 	line-height: 1.15em;
+	margin-top: -0.25em;
 }
 
 .imgCella2 {
