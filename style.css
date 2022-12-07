@@ -100,7 +100,7 @@ h1 {
 .categoria{
 	font-size: 1.4em;
 	line-height: 1.2em;
-	margin-bottom: -0.1em;
+	margin-bottom: 0em;
 }
 
 h2{
@@ -206,7 +206,6 @@ a{
 	margin-right: 0em;
 	padding-bottom: 152px;
 	padding-top: 0.5em;
-
 }
 
 .imgCella {
@@ -219,11 +218,13 @@ a{
     width: 100%;
     height: 100%;
   	object-fit: cover;
+
 }
 
 
+
 .cella {
-	margin-bottom: 0.25em;
+	 margin-bottom: 0.25em;
 }
 
 .doppia {
@@ -241,6 +242,8 @@ a{
 .dodici {
 	grid-column: span 6;
 }
+
+
 
 		/*
 			.indice{
@@ -274,7 +277,6 @@ a{
 		padding-left: 0em;
 		padding-bottom: 0em;
 	}
-
 
 hr {
 	text-decoration: none;
@@ -334,7 +336,6 @@ h2:hover{
 p{
 	font-size: 1.3em;
 	line-height: 1.15em;
-
 }
 
 pre{
@@ -345,6 +346,8 @@ pre{
 .infoQuadri{
 	font-size: 0.75em;
 	padding-top: 0.25em;
+	position: absolute;
+	z-index: -100;
 }
 
 
@@ -376,9 +379,30 @@ pre{
 	line-height: 1.15em;
 }
 
+.imgCella2 {
+    margin: auto;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -100;
+    width: calc(100% - 130px);
+     height: 100%;
+  object-fit: cover;
+  margin-bottom: 0.25em;
+  float: right;
+  margin-left: 400px;
+}
+
+.infoRomina {
+	margin-top: -0.25em;
+}
+
+
 }
 
 @media only screen and (min-width: 701px) {
+
 
 .grigliahome {
 	max-width: width;
@@ -401,6 +425,19 @@ pre{
 	padding-top: 0.5em;
 }
 
+
+
+.imgCella2 {
+    margin: auto;
+    left: 0;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+  	object-fit: cover;
+}
 .cella {
 	/*margin-bottom: 1em;*/
 }
