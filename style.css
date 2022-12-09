@@ -163,6 +163,7 @@ a{
      height: 100%;
   object-fit: cover;
   margin-bottom: 0.25em;
+
 }
 
 .infoQuadri{
@@ -305,6 +306,7 @@ hr {
     z-index: -100;
     max-height: 70%;
     max-width: 70%;
+      transition: opacity 0.3s linear 2s
 }
 
 h2{
