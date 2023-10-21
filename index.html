@@ -4,272 +4,244 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Romina Berri</title>
 	<link rel="stylesheet" href="style.css">
-	<style type="text/css">
-	</style>
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
 </head>
 
 <body class="noselect" style="overflow-y: hidden;" style="font-family: 'manrope'; font-weight: 500;">
 
-<div id="loader" class="center"></div>
+    <div id="loader" class="center"></div>
 
-<div class="flexContainer">
-	<a href="index.html">
- 	<div class="titolo"style="color:black">
-	<h1 id="input" class="invisibile">Romina Berri</h1>
-	<pre id="output"></pre>
-	<hr>
-	</div>
-	</a>
+    <div class="flexContainer">
+    	<a href="index.html">
+     	<div class="titolo"style="color:black">
+    	<h1 id="input" class="invisibile">Romina Berri</h1>
+    	<pre id="output"></pre>
+    	<hr>
+    	</div>
+    	</a>
 
-	<div class="info">
-		<a href="info.html">
-			<h1>Info</h1><hr>
-		</a>
-	</div>	
-</div>
+    	<div class="info">
+    		<a href="info.html">
+    			<h1>Info</h1><hr>
+    		</a>
+    	</div>	
+    </div>
 
-<p id="demo"></p> 
+    <p id="demo"></p> 
 
-<div id="bottone_avanti" onclick="avanti()" style="margin: -50px; padding: 50px;">
-	<img src="Icons/arrow_forward_black_24dp.svg">
-</div>
+    <div id="bottone_avanti" onclick="avanti()" style="margin-top: -50vh; padding-top:  50vh; margin-bottom: -50vh; padding-bottom:  50vh; padding-right: 12px; margin-right: -12px; padding-left: 12px;">
+        <span class="material-symbols-outlined" style="font-size: 48px;">arrow_forward</span>
+    </div>
 
-<div id="bottone_indietro" onclick="indietro()" style="margin: -50px; padding: 50px;">
-	<img src="Icons/arrow_back_black_24dp.svg">
-</div>
+    <div id="bottone_indietro" onclick="indietro()" style="margin-top: -50vh; padding-top:  50vh; margin-bottom: -50vh; padding-bottom:  50vh; padding-left: 12px; margin-left: -12px; padding-right: 12px;">
+        <span class="material-symbols-outlined" style="font-size: 48px;">arrow_back</span>
+    </div>
 
-<div class="grigliahome" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="nextImage()">
-	<div id="Outer" class="cella dodici img">
-
-		<img src="Thumbnail/8.jpg" class="imageHome" id="mainImage">
-		
-
-		<!-- <img src="Thumbnail/07.jpg"> -->
-	</div>
-</div>
+    <div class="grigliahome" onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="nextImage()">
+    	<div id="Outer" class="cella dodici img">
+    		<img src="Thumbnail/8.jpg" class="imageHome" id="mainImage">
+    		<!-- <img src="Thumbnail/07.jpg"> -->
+    	</div>
+    </div>
 
 
-<!-- 	<div class="flexContainer2">
-			<div>
-				<hr class="hrindice">
-				<h2>Quadri</h2><hr class="hrindice">
-				<h2 onclick="openMenu()" id="hidePic">Fotografie</h2>
-				<div id="hideContent" style="display: none">
-	
-					<h2 style="	text-align: right;">Matrimoni</h2><hr class="hrindice">
-					<h2 style="	text-align: right;">Architettura</h2><hr class="hrindice">
-					<h2 style="	text-align: right;">Still life</h2 class="hrindice">
-				</div>
-								
-			</div>
-		</div>-->
+	<div class="flexContainer2">
+    	<div class="indice">
+    		<hr class="hrindice">
 
-			<div class="flexContainer2">
-			<div class="indice">
-				<hr class="hrindice">
+            <a href="architettura.html">
+            	<h2>Architettura</h2><hr class="hrindice">
+            </a>
 
-                <a href="architettura.html">
-                	<h2>Architettura</h2><hr class="hrindice">
-                </a>
+            <a href="still_life.html">
+            	<h2>Still life</h2 class="hrindice"><hr class="hrindice">
+            </a>	
 
-                <a href="still_life.html">
-                	<h2>Still life</h2 class="hrindice"><hr class="hrindice">
-                </a>	
+            <a href="matrimoni.html">
+           		<h2>Matrimoni</h2><hr class="hrindice">
+            </a>
 
-                <a href="matrimoni.html">
-               		<h2>Matrimoni</h2><hr class="hrindice">
-                </a>
+            <a href="quadri.html">
+    			<h2>Quadri</h2>
+    		</a>	
+    	</div>
+    </div>	
 
-               <a href="quadri.html">
-					<h2>Quadri</h2>
-				</a>	
-			</div>
-		</div>	
-
-<script>
-
-    document.onreadystatechange = function () {
+    <script>
+        document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
-                document.querySelector(
-                    "body").style.visibility = "hidden";
-                document.querySelector(
-                    "#loader").style.visibility = "visible";
+                document.querySelector("body").style.visibility = "hidden";
+                    document.querySelector(
+                        "#loader").style.visibility = "visible";
             } else {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
+                    document.querySelector("#loader").style.display = "none";
+                    document.querySelector("body").style.visibility = "visible";
 
-                let testo = document.querySelector('#input').innerText
-                let out = document.querySelector('#output')
-                let indice = 0
+                    let testo = document.querySelector('#input').innerText
+                    let out = document.querySelector('#output')
+                    let indice = 0
 
-                function aggiungiTesto() {
-                    out.innerText += testo[indice]
-                    indice = indice + 1
-                    if (indice < testo.length) {
-                        let pausa = Math.floor(Math.random() * 3) * 75 + 170
+                    function aggiungiTesto() {
+                        out.innerText += testo[indice]
+                        indice = indice + 1
+                        if (indice < testo.length) {
+                            let pausa = Math.floor(Math.random()*3)*75+170
                         setTimeout(aggiungiTesto, pausa)
-    }
-}
-aggiungiTesto()
             }
-        };
+        }
 
-var imgArray = new Array();
+        aggiungiTesto()
+                    }
+                };
 
-imgArray[0] = new Image();
-imgArray[0].src = 'Thumbnail/0.jpg';
+        var imgArray = new Array();
 
-imgArray[1] = new Image();
-imgArray[1].src = 'Thumbnail/1.jpg';
+            imgArray[0] = new Image();
+            imgArray[0].src = 'Thumbnail/0.jpg';
 
-imgArray[2] = new Image();
-imgArray[2].src = 'Thumbnail/2.jpg';
+            imgArray[1] = new Image();
+            imgArray[1].src = 'Thumbnail/1.jpg';
 
-imgArray[3] = new Image();
-imgArray[3].src = 'Thumbnail/3.jpg';
+            imgArray[2] = new Image();
+            imgArray[2].src = 'Thumbnail/2.jpg';
 
-imgArray[4] = new Image();
-imgArray[4].src = 'Thumbnail/4.jpg';
+            imgArray[3] = new Image();
+            imgArray[3].src = 'Thumbnail/3.jpg';
 
-imgArray[5] = new Image();
-imgArray[5].src = 'Thumbnail/5.jpg';
+            imgArray[4] = new Image();
+            imgArray[4].src = 'Thumbnail/4.jpg';
 
-imgArray[6] = new Image();
-imgArray[6].src = 'Thumbnail/6.jpg';
+            imgArray[5] = new Image();
+            imgArray[5].src = 'Thumbnail/5.jpg';
 
-imgArray[7] = new Image();
-imgArray[7].src = 'Thumbnail/7.jpg';
+            imgArray[6] = new Image();
+            imgArray[6].src = 'Thumbnail/6.jpg';
 
-imgArray[8] = new Image();
-imgArray[8].src = 'Thumbnail/8.jpg';
+            imgArray[7] = new Image();
+            imgArray[7].src = 'Thumbnail/7.jpg';
 
-imgArray[9] = new Image();
-imgArray[9].src = 'Thumbnail/9.jpg';
+            imgArray[8] = new Image();
+            imgArray[8].src = 'Thumbnail/8.jpg';
 
-imgArray[10] = new Image();
-imgArray[10].src = 'Thumbnail/10.jpg';
+            imgArray[9] = new Image();
+            imgArray[9].src = 'Thumbnail/9.jpg';
 
-imgArray[11] = new Image();
-imgArray[11].src = 'Thumbnail/11.jpg';
+            imgArray[10] = new Image();
+            imgArray[10].src = 'Thumbnail/10.jpg';
 
-imgArray[12] = new Image();
-imgArray[12].src = 'Thumbnail/12.jpg';
+            imgArray[11] = new Image();
+            imgArray[11].src = 'Thumbnail/11.jpg';
 
-imgArray[13] = new Image();
-imgArray[13].src = 'Thumbnail/13.jpg';
+            imgArray[12] = new Image();
+            imgArray[12].src = 'Thumbnail/12.jpg';
 
-imgArray[14] = new Image();
-imgArray[14].src = 'Thumbnail/14.jpg';
+            imgArray[13] = new Image();
+            imgArray[13].src = 'Thumbnail/13.jpg';
 
-imgArray[15] = new Image();
-imgArray[15].src = 'Thumbnail/15.jpg';
+            imgArray[14] = new Image();
+            imgArray[14].src = 'Thumbnail/14.jpg';
 
-imgArray[16] = new Image();
-imgArray[16].src = 'Thumbnail/16.jpg';
+            imgArray[15] = new Image();
+            imgArray[15].src = 'Thumbnail/15.jpg';
 
-imgArray[17] = new Image();
-imgArray[17].src = 'Thumbnail/17.jpg';
+            imgArray[16] = new Image();
+            imgArray[16].src = 'Thumbnail/16.jpg';
 
-
-function nextImage(){
-
-  var x = event.clientX;
-  var y = event.clientY;
-  var coor = "X coords: " + x + ", Y coords: " + y;
-  var img = document.getElementById("mainImage");
+            imgArray[17] = new Image();
+            imgArray[17].src = 'Thumbnail/17.jpg';
 
 
-  if(x > (window.innerWidth/2+88)){
-  	for(var i = 0; i < imgArray.length;i++){
-        if(imgArray[i].src == img.src){
-            if(i === imgArray.length){
-            document.getElementById("mainImage").src = imgArray[0].src;
-            break;
+        function nextImage(){
+
+            var x = event.clientX;
+            var y = event.clientY;
+            var coor = "X coords: " + x + ", Y coords: " + y;
+            var img = document.getElementById("mainImage");
+
+
+        if(x > (window.innerWidth/2+88)){
+          	for(var i = 0; i < imgArray.length;i++){
+                if(imgArray[i].src == img.src){
+                    if(i === imgArray.length){
+                    document.getElementById("mainImage").src = imgArray[0].src;
+                    break;
+                    }
+                    document.getElementById("mainImage").src = imgArray[i+1].src;
+                    break;
+                }
             }
-            document.getElementById("mainImage").src = imgArray[i+1].src;
-            break;
-        }
-    }
-  }
+          }
 
-	else if(x > 184){
-  	 for(var i = imgArray.length-1; i >=0 ;i--){
-        if(imgArray[i].src == img.src){
-            if(i === imgArray.length){
-               document.getElementById("mainImage").src = imgArray[2].src;
-               break;
+        	else if(x > 184){
+          	 for(var i = imgArray.length-1; i >=0 ;i--){
+                if(imgArray[i].src == img.src){
+                    if(i === imgArray.length){
+                       document.getElementById("mainImage").src = imgArray[2].src;
+                       break;
+                    }
+                    	document.getElementById("mainImage").src = imgArray[i-1].src;
+                    	break;
+                    }
+                }
             }
-            	document.getElementById("mainImage").src = imgArray[i-1].src;
-            	break;
+            
         }
-    }
-  }
-    
-}
 
 
-function avanti(){
-var img = document.getElementById("mainImage");
+        function avanti(){
+            var img = document.getElementById("mainImage");
 
-  	for(var i = 0; i < imgArray.length;i++){
-        if(imgArray[i].src == img.src){
-            if(i === imgArray.length){
-            document.getElementById("mainImage").src = imgArray[0].src;
-            break;
+      	for(var i = 0; i < imgArray.length;i++){
+            if(imgArray[i].src == img.src){
+                if(i === imgArray.length){
+                document.getElementById("mainImage").src = imgArray[0].src;
+                break;
+                }
+                document.getElementById("mainImage").src = imgArray[i+1].src;
+                break;
+                }
             }
-            document.getElementById("mainImage").src = imgArray[i+1].src;
-            break;
         }
-    }
-  }
 
-function indietro(){
-var img = document.getElementById("mainImage");
+        function indietro(){
+            var img = document.getElementById("mainImage");
+            for(var i = imgArray.length-1; i >=0 ;i--){
+                if(imgArray[i].src == img.src){
+                    if(i === imgArray.length){document.getElementById("mainImage").src = imgArray[3].src;
+                break;
+                }
+                document.getElementById("mainImage").src = imgArray[i-1].src;
+                	break;
+           		}
+        	}
+         }
 
-  for(var i = imgArray.length-1; i >=0 ;i--){
-    if(imgArray[i].src == img.src){
-        if(i === imgArray.length){
-           document.getElementById("mainImage").src = imgArray[3].src;
-           break;
+        function showCoords(event) {
+          var x = event.clientX;
+          var y = event.clientY;
+          var coor = "X coords: " + x + ", Y coords: " + y;
+
+          if(window.innerWidth > 700){
+        	if(x > (window.innerWidth/2+88)){
+        	  	document.getElementById("demo").innerHTML = "";
+        	  	document.body.style.cursor = "url('Icons/arrow_forward_FILL0_wght400_GRAD0_opsz48.svg'), auto";
+        	}
+
+        	else if(x > 184){
+        	 	document.body.style.cursor = "url('Icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg'), auto";
+        	  }
+
+        	else{
+        	 	document.body.style.cursor = "default";
+        	  }
+          }
+          	else{
+          		document.body.style.cursor = "default"
+          } 
         }
-        	document.getElementById("mainImage").src = imgArray[i-1].src;
-        	break;
-   		}
-	}
- }
 
-
-function showCoords(event) {
-  var x = event.clientX;
-  var y = event.clientY;
-  var coor = "X coords: " + x + ", Y coords: " + y;
-
-  if(window.innerWidth > 700){
-	if(x > (window.innerWidth/2+88)){
-	  	document.getElementById("demo").innerHTML = "";
-	  	document.body.style.cursor = "url('Icons/arrow_forward_black_36dp.svg'), auto";
-	}
-
-	else if(x > 184){
-	 	document.body.style.cursor = "url('Icons/arrow_back_black_36dp.svg'), auto";
-	  }
-
-	else{
-	 	document.body.style.cursor = "default";
-	  }
-  }
-  	else{
-  		document.body.style.cursor = "default"
-  } 
-}
-
-
-
-
-</script>
-
+    </script>
 </body>
 </html>
