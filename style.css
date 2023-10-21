@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500&display=swap');
 
 @font-face {
     font-family: 'manrope';
@@ -114,7 +114,7 @@ p{
 	color: black;
 	font-size: 1.3em !important;
 	line-height: 1.2em !important;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 h1 {
@@ -198,7 +198,7 @@ a{
 	font-size: 0.75em !important;
 	padding-top: 0em;
 	line-height: 1.3em !important;
-	font-weight: 300;
+	font-weight: 200;
     font-style: normal;
 }
 
@@ -379,7 +379,7 @@ p{
     src: url('Font/Manrope-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 pre{
@@ -393,7 +393,7 @@ pre{
 	position: absolute;
 	z-index: -100;
 	line-height: 1.35em !important;
-	font-weight: 300;
+	font-weight: 200;
     font-style: normal;
 }
 
@@ -427,7 +427,7 @@ pre{
 	margin-top: -0.25em;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	font-weight: 300;
+	font-weight: 200;
     font-style: normal;
 }
 
