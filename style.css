@@ -195,9 +195,9 @@ a{
 }
 
 .infoQuadri{
-	font-size: 0.75em !important;
+	font-size: 0.8em !important;
 	padding-top: 0em;
-	line-height: 1.3em !important;
+	line-height: 1.25em !important;
 	font-weight: 200;
     font-style: normal;
 }
@@ -392,7 +392,7 @@ pre{
 	padding-top: 0.25em;
 	position: absolute;
 	z-index: -100;
-	line-height: 1.35em !important;
+	line-height: 1.3em !important;
 	font-weight: 200;
     font-style: normal;
 }
@@ -474,7 +474,7 @@ pre{
 	grid-column-gap: 0.5em;
 	grid-row-gap: 0.5em;
 	margin-right: 0em;
-	padding-left: calc(178px + 0.5em);
+	padding-left: calc(189px + 0.5em);
 	padding-top: 0.5em;
 	padding-bottom: 0px;
 }
@@ -593,7 +593,7 @@ hr{
 h2{
 	font-size: 1.4em;
 	margin: 0em;
-	margin-right: calc(50px);
+	margin-right: calc(62px);
 	color: black;
 	width: 100%;
 	font-weight: 500;
