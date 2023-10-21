@@ -166,7 +166,7 @@ a{
 }
 
 .infoQuadri{
-	font-size: 0.875em;
+	font-size: 0.875em !important;
 	padding-top: 0em;
 	line-height: 1.2em;
 }
@@ -346,7 +346,7 @@ pre{
 }
 
 .infoQuadri{
-	font-size: 0.75em;
+	font-size: 0.75em !important;
 	padding-top: 0.25em;
 	position: absolute;
 	z-index: -100;
