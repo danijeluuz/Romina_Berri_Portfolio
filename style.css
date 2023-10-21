@@ -85,8 +85,8 @@ p{
 	margin:0;
 	z-index: 1000;
 	color: black;
-	font-size: 1.3em;
-	line-height: 1.2em;
+	font-size: 1.3em !important;
+	line-height: 1.2em !important;
 }
 
 h1 {
@@ -336,8 +336,8 @@ h2:hover{
 }
 
 p{
-	font-size: 1.1em;
-	line-height: 1.175em;
+	font-size: 1.1em !important;
+	line-height: 1.2em !important;
 }
 
 pre{
