@@ -85,7 +85,7 @@ p{
 	margin:0;
 	z-index: 1000;
 	color: black;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	line-height: 1.2em;
 }
 
@@ -98,7 +98,6 @@ h1 {
 }
 
 .categoria{
-	font-size: 1.4em;
 	line-height: 1.2em;
 	margin-bottom: 0em;
 	margin-top: -0.20em;
@@ -167,9 +166,9 @@ a{
 }
 
 .infoQuadri{
-	font-size: 0.9em;
+	font-size: 0.875em;
 	padding-top: 0em;
-	line-height: 1.15em;
+	line-height: 1.2em;
 }
 
 /*
@@ -337,7 +336,7 @@ h2:hover{
 }
 
 p{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 1.15em;
 }
 
@@ -351,6 +350,7 @@ pre{
 	padding-top: 0.25em;
 	position: absolute;
 	z-index: -100;
+	line-height: 1.2em;
 }
 
 
@@ -378,7 +378,6 @@ pre{
 }
 
 .categoria{
-	font-size: 1.3em;
 	line-height: 1.15em;
 	margin-top: -0.25em;
 }
