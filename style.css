@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'manrope';
+    src: url('Font/Manrope.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 500;
+}
+
 #loader {
     border: 4px solid rgb(255,255,255);
     border-radius: 50%;
@@ -28,15 +36,6 @@ body {
 	font-family: manrope;
 	/*overflow-y: hidden;*/
 }
-
-@font-face {
-    font-family: 'manrope';
-    src: url('Font/Manrope-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-weight: 500;
-}
-
 
 .noselect {
   	-webkit-touch-callout: none; /* iOS Safari */
@@ -125,6 +124,9 @@ h1 {
 	line-height: 1.2em;
 	margin-bottom: 0em;
 	margin-top: -0.20em;
+	font-family: 'manrope';
+	font-weight: 400;
+    font-style: normal;
 }
 
 h2{
@@ -133,7 +135,7 @@ h2{
 	color: black;
 	line-height: 1.4em;
 	font-size: 1.4em;
-		 font-family: 'manrope';
+	font-family: 'manrope';
     font-weight: 500;
 
 }
@@ -190,9 +192,12 @@ a{
 }
 
 .infoQuadri{
-	font-size: 0.875em !important;
+	font-size: 0.75em !important;
 	padding-top: 0em;
 	line-height: 1.2em;
+	font-family: 'manrope';
+	font-weight: 400;
+    font-style: normal;
 }
 
 /*
@@ -370,11 +375,14 @@ pre{
 }
 
 .infoQuadri{
-	font-size: 0.75em !important;
+	font-size: 0.6em !important;
 	padding-top: 0.25em;
 	position: absolute;
 	z-index: -100;
 	line-height: 1.2em;
+	font-family: 'manrope';
+	font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -388,7 +396,7 @@ pre{
 	position: fixed;
     margin: auto;
     top: calc(50vh - 60px);
-    right: 12px;
+    right: 0.5em;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
@@ -397,7 +405,7 @@ pre{
 	position: fixed;
     margin: auto;
 	top: calc(50vh - 60px);
-	left: 12px;cursor: ;
+	left: 0.5em;
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -405,6 +413,9 @@ pre{
 .categoria{
 	line-height: 1.15em;
 	margin-top: -0.25em;
+	font-family: 'manrope';
+	font-weight: 400;
+    font-style: normal;
 }
 
 .imgCella2 {
@@ -424,6 +435,9 @@ pre{
 
 .infoRomina {
 	margin-top: -0.25em;
+	font-family: 'manrope';
+	font-weight: 400;
+    font-style: normal;
 }
 
 
