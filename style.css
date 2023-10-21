@@ -177,7 +177,7 @@ a{
 	color: black;
 	margin: 0;
 	padding: 0;
-	font-weight: 500;
+	font-weight: 500 !important;
 }
 
 .imgCella {
