@@ -195,7 +195,6 @@ a{
 
 .infoQuadri{
 	font-size: 0.8em !important;
-	padding-top: 0.5em;
 	line-height: 1.25em !important;
 	font-weight: 200;
     font-style: normal;
@@ -203,7 +202,6 @@ a{
 
 .infoQuadriTitolo{
 	font-size: 0.8em !important;
-	padding-top: 0.5em;
 	line-height: 1.25em !important;
 	font-weight: 500;
     font-style: normal;
@@ -280,6 +278,11 @@ a{
 	 grid-column: span 2;
 }
 
+.cinque{
+    position: absolute;
+    z-index: -100;
+}
+
 .sei{
 	grid-column: span 3;
 }
@@ -354,7 +357,7 @@ h2{
 }
 
 h1{
-	font-size: 2em;
+	font-size: 1.75em;
 	line-height: 1.4em;
 	color: black;
 }
@@ -381,17 +384,16 @@ p{
 }
 
 pre{
-	font-size: 2em;
+	font-size: 1.75em;
 	line-height: 1.4em;
 }
 
 .infoQuadri{
 	font-size: 0.65em !important;
-	position: absolute;
-	z-index: -100;
 	line-height: 1.3em !important;
 	font-weight: 200;
     font-style: normal;
+    z-index: -100;
 }
 
 .infoQuadriTitolo{
@@ -400,6 +402,7 @@ pre{
 	line-height: 1.3em !important;
 	font-weight: 500;
     font-style: normal;
+    z-index: -100;
 }
 
 .close{
@@ -442,12 +445,12 @@ pre{
     right: 0;
     bottom: 0px;
     z-index: -100;
-    width: calc(100% - 130px);
-     height: 100%;
-  object-fit: cover;
-  margin-bottom: 0.25em;
-  float: right;
-  margin-left: 400px;
+    width: calc(100% - 100px);
+    height: 100%;
+ 	object-fit: cover;
+ 	margin-bottom: 0.25em;
+ 	float: right;
+ 	margin-left: 400px;
 }
 
 .infoRomina {
@@ -455,6 +458,15 @@ pre{
 	padding-top: 0px;
 }
 
+.close{
+	color: black;
+  	font-size: 2em;
+  	height: 39.2px;
+}
+
+.material-symbols-outlined{
+	font-size: 39.2px !important;
+}
 
 }
 
