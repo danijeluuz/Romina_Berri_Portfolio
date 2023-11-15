@@ -150,6 +150,10 @@ h2:hover{
 	transition: color 200ms ease-out 10ms;		
 }
 
+a{
+	padding: 0px !important;
+}
+
 a:hover{
 	color: rgb(200,200,200);
 	cursor: pointer;
