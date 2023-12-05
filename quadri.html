@@ -46,6 +46,23 @@
          <hr class="hrquadri">
     </div>
 
+    
+
+    <div class="cella didascalia">
+        <p class="infoQuadriTitolo">Barna</p>
+        <p class="infoQuadri">
+        <br>120x150 cm<br>2023<br>Acrilico su tela<br>1550.–
+    </p>
+        
+    </div>
+    <div class="cella sei">
+        <img data-enlargable  src="Fotografie/Quadri/Nuove/020_Barna-150x120.jpg" class="imgCella2">
+    </div>
+    <div class="cella dodici">
+         <hr class="hrquadri">
+    </div>
+
+
      <div class="cella didascalia">
         <p class="infoQuadriTitolo">Piz uccello</p>
         <p class="infoQuadri">
@@ -54,7 +71,7 @@
         
     </div>
     <div class="cella sei">
-        <Image src="Fotografie/Quadri/Nuove/019_PizUccello_nebbia_150x120cm.jpg" class="imgCella2">
+        <img data-enlargable  src="Fotografie/Quadri/Nuove/019_PizUccello_nebbia_150x120cm.jpg" class="imgCella2">
     </div>
     <div class="cella dodici">
          <hr class="hrquadri">
@@ -353,6 +370,29 @@
                 "body").style.visibility = "visible";
         }
     };
+
+    $("img[data-enlargable]")
+  .addClass("img-enlargable")
+  .click(function () {
+    var src = $(this).attr("src");
+    $("<div>")
+      .css({
+        background: "RGBA(0,0,0,.5) url(" + src + ") no-repeat center",
+        backgroundSize: "contain",
+        width: "100%",
+        height: "100%",
+        position: "fixed",
+        zIndex: "10000",
+        top: "0",
+        left: "0",
+        cursor: "zoom-out"
+      })
+      .click(function () {
+        $(this).remove();
+      })
+      .appendTo("body");
+  });
+
 </script>
         
 </body>
